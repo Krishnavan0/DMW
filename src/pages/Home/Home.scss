@@ -1,0 +1,11 @@
+// Media Queries
+
+//  Computers and Laptops
+
+@media (min-width: 600px) {
+  .home {
+    width: 80%;
+    max-width: 108rem;
+    margin: auto;
+  }
+}
