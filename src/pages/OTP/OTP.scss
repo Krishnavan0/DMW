@@ -1,0 +1,79 @@
+.otp {
+	height: 100vh;
+	width: 100vw;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-image: url("https://images.pexels.com/photos/190574/pexels-photo-190574.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+	background-repeat: no-repeat;
+	background-size: cover;
+
+	.otp_box {
+		width: 36.2rem;
+		padding: 1.5rem 3.5rem 2rem 3.5rem;
+		text-align: center;
+		// border: 0.1rem solid #818181;
+		background: #ffffff;
+		border-radius: 1rem;
+		box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+
+		// border: 0.1rem solid #c4c4c4;
+		.otp_logo {
+			margin-bottom: 2rem;
+
+			.otp_name {
+				font-size: 3.2rem;
+			}
+		}
+
+		.otp_para {
+			font-weight: 400;
+			font-size: 1.6rem;
+			line-height: 2.2rem;
+			margin-bottom: 3.3rem;
+		}
+
+		.otp-email {
+			font-size: 1.4rem;
+			margin-bottom: 1rem;
+			color: red;
+
+			input {
+				z-index: 5;
+				width: 29.8rem;
+				height: 4rem;
+				outline: none;
+				color: #0a033c;
+				padding: 0rem 1.8rem;
+				background: #ffffff;
+				border-radius: 0.5rem;
+				border: 1px solid #c4c4c4;
+				margin-bottom: 1.8rem;
+				display: block;
+			}
+		}
+
+		.otp-btn {
+			display: flex;
+			justify-content: space-between;
+			margin-bottom: 3rem;
+		}
+
+		.otp_resend {
+			.otp_resend_click {
+				font-weight: 400;
+				font-size: 1.2rem;
+				line-height: 1.5rem;
+				color: #0a033c;
+			}
+
+			.otp_clickResend {
+				font-weight: 500;
+				font-size: 1.2rem;
+				line-height: 1.4rem;
+				color: #404dbf;
+				cursor: pointer;
+			}
+		}
+	}
+}

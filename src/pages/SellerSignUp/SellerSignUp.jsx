@@ -45,7 +45,7 @@ const SignUp = () => {
 
   const submitForm = (values, action) => {
     console.log('Seller Registration', values)
-    navigate('bussdet')
+    navigate('/otp')
   };
 
   return (
