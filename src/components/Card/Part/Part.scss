@@ -1,36 +1,36 @@
-.features {
+.part {
   width: 100%;
   display: flex;
   align-items: center;
-  background-color: #D4F1F4;
+  background-color: #28f8ba;
   padding: 3.3rem 6rem;
   flex-direction: column;
 
-  .features_heading {
+  .part_heading {
     font-size: 3.6rem;
     font-weight: 500;
     margin-bottom: 1.3rem;
     text-transform: uppercase;
   }
 
-  .features_parag {
+  .part_parag {
     font-size: 1.6rem;
     margin-bottom: 3.7rem;
     font-weight: 400;
     text-align: center;
   }
 
-  .features_items {
+  .part_items {
     max-width: 90%;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
 
-    .features_box {
+    .part_box {
       width: 25rem;
       height: 25rem;
       display: flex;
-      background: #FFF;
+      background: #fff;
       align-items: center;
       margin-bottom: 2.3rem;
       border-radius: 1.5rem;
@@ -38,11 +38,11 @@
       justify-content: center;
       box-shadow: 0px 4px 5px 0px rgba(0, 0, 0, 0.25);
 
-      .features_img{
+      .part_img {
         height: 16rem;
         width: auto;
       }
-      .features_name{
+      .part_name {
         font-size: 1.8rem;
         font-weight: 500;
       }

@@ -23,7 +23,8 @@ const OTP = () => {
   });
 
   const submitForm = (values, action) => {
-    console.log("values", values);
+    console.log("OTP", values);
+    navigate('/')
     // const name = signUpData.data.name?.split(" ");
     // const data = {
     //   email: signUpData.data.email,

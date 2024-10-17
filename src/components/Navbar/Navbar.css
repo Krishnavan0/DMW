@@ -1,0 +1,40 @@
+.navbar {
+  height: 7rem;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  background: aliceblue;
+}
+.navbar .nav {
+  display: flex;
+  width: 85%;
+  margin: auto;
+  align-items: center;
+  justify-content: space-between;
+}
+.navbar .nav .nav_logo img {
+  font-size: 3rem;
+  width: 20rem;
+  height: 5.8rem;
+}
+.navbar .nav .nav_items {
+  display: flex;
+  justify-content: space-between;
+}
+.navbar .nav .nav_items .nav_item_list {
+  display: flex;
+  width: 27rem;
+  justify-content: space-between;
+  list-style: none;
+  align-items: center;
+  margin-right: 5rem;
+}
+.navbar .nav .nav_items .nav_item_list .nav_item {
+  font-size: 1.7rem;
+  font-weight: 400;
+}
+.navbar .nav .nav_items .nav_item_list .nav_item a {
+  text-decoration: none;
+  color: black;
+}/*# sourceMappingURL=Navbar.css.map */

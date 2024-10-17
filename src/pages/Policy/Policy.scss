@@ -2,19 +2,24 @@
 
 //  Computers and Laptops
 
-.about {
+.policy {
   width: 85%;
   margin: 4rem auto 9rem auto;
 
-  .about_title {
+  .policy_title {
     font-size: 2.5rem;
     margin-bottom: 2rem;
-    font-weight: 500;
+    font-weight: 600;
     text-align: center;
     text-transform: uppercase;
   }
-  .about_para {
+  .policy_para {
     font-size: 1.6rem;
     margin-bottom: 1.3rem;
+  }
+  .policy_head {
+    font-size: 2rem;
+    margin-bottom: 1.3rem;
+    font-weight: 500;
   }
 }

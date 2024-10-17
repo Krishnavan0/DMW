@@ -34,18 +34,26 @@ const SignUp = () => {
       .email("Email is invalid")
       .matches(onlyEmail, "Your Email looks like johndoe@gmail.com")
       .required("Email is required!"),
-    password: yup
+    pass: yup
       .string()
       .nullable()
       .trim()
       .required("Password is required!")
       .min(8, "Password must be at least 8 characters")
       .max(20, "Password must be at most 20 characters"),
+    passconf: yup
+      .string(),
+    alterphone: yup
+      .string(),
+    phone: yup
+      .string(),
+    profile: yup
+      .string(),
   });
 
   const submitForm = (values, action) => {
     console.log('Seller Registration', values)
-    navigate('/otp')
+    navigate('/bussdet')
   };
 
   return (

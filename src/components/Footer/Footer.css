@@ -1,0 +1,56 @@
+.footer {
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  background: #262626;
+  padding: 3rem;
+}
+.footer .foot {
+  width: 90%;
+}
+.footer .foot .foot_head {
+  font-size: 3.6rem;
+  text-align: center;
+  margin-bottom: 1rem;
+  color: #fff;
+}
+.footer .foot .foot_sect {
+  display: flex;
+  justify-content: space-between;
+}
+.footer .foot .foot_sect .foot_col_1 {
+  width: 30%;
+}
+.footer .foot .foot_sect .foot_col_1 .foot_title {
+  font-size: 2.1rem;
+  font-weight: 600;
+  margin-bottom: 1.2rem;
+  color: #fff;
+}
+.footer .foot .foot_sect .foot_col_1 .foot_items {
+  list-style: none;
+}
+.footer .foot .foot_sect .foot_col_1 .foot_items .foot_item {
+  font-size: 1.7rem;
+  text-decoration: none;
+  margin-bottom: 0.5rem;
+}
+.footer .foot .foot_sect .foot_col_1 .foot_items .foot_item a {
+  text-decoration: none;
+  color: #c6c6c6;
+}
+
+.copyright_sect {
+  width: 100%;
+  height: auto;
+  background: #1e1e1e;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 0;
+}
+.copyright_sect .copyright .copyright_head {
+  font-size: 1.6rem;
+  text-align: center;
+  color: #c6c6c6;
+}/*# sourceMappingURL=Footer.css.map */

@@ -10,6 +10,7 @@ const BussDet = () => {
 
   const defaultValue = {
     bussname: "",
+    loc: "",
     address: "",
     pincode: "",
     country: "",
@@ -19,15 +20,36 @@ const BussDet = () => {
     panimg: "",
     gstno: "",
     gstimg: "",
-    loc: "",
   };
 
   const validationSchema = yup.object().shape({
-
+    bussname: yup
+      .string(),
+      loc: yup
+      .string(),
+      address: yup
+      .string(),
+      pincode: yup
+      .string(),
+      country: yup
+      .string(),
+      state: yup
+      .string(),
+      city: yup
+      .string(),
+      panno: yup
+      .string(),
+      panimg: yup
+      .string(),
+      gstno: yup
+      .string(),
+      gstimg: yup
+      .string(),
   })
 
   const submitForm = (values, action) => {
     console.log('Bussiness Details', values)
+    navigate('/otp')
   };
 
   return (

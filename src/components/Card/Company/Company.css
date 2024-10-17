@@ -2,7 +2,7 @@
   width: 100%;
   display: flex;
   align-items: center;
-  background-color: #60f8f8;
+  background-color: #D4F1F4;
   padding: 3.3rem 6rem;
   flex-direction: column;
 }
@@ -33,6 +33,7 @@
   justify-content: center;
   flex-direction: column;
   background: #FFF;
+  border-radius: 1.5rem;
 }
 .company .company_items .company_box .company_img {
   height: 16rem;
