@@ -40,6 +40,11 @@
   text-decoration: none;
   color: #c6c6c6;
 }
+.footer .foot .foot_sect .foot_col_1 .foot_items .foot_item .foot_item_text {
+  text-decoration: none;
+  color: #c6c6c6;
+  cursor: pointer;
+}
 
 .copyright_sect {
   width: 100%;

@@ -21,8 +21,6 @@ const About = () => {
         <div className="about_para">
         Thank you for choosing DMW Durgapur Machine Works as your connection to quality spare parts. We look forward to working with you!
         </div>
-
-
       </div>
       <Footer/>
     </>

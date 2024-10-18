@@ -34,59 +34,62 @@ const SellerSignIn = () => {
 
   const handleSubmit = (values, action) => {
     console.log('SignIn', values)
+    navigate('/')
   };
   return (
     <>
       <div className="signin">
-        <div className="signin_box">
-          
+        <div className="signin_container">
+          <div className="signin_box">
+
             <div className="signin_name">
               <NavLink to="/">DMW</NavLink>
             </div>
-          
-          <div className="signin_parah2">Parts Supplier Login Only</div>
-          <div className="signin_para">Welcome Back</div>
-          <Formik
-            initialValues={defaultValue}
-            validationSchema={validationSchema}
-            onSubmit={handleSubmit}
-          >
-            <Form action="" className="signin-form">
-              <div className="signin-email">
-                <Field
-                  type="email"
-                  name="email"
-                  placeholder="Email"
-                  autoComplete="username"
-                />
-                <ErrorMessage name="email" />
+
+            <div className="signin_parah2">Parts Supplier Login Only</div>
+            <div className="signin_para">Welcome Back</div>
+            <Formik
+              initialValues={defaultValue}
+              validationSchema={validationSchema}
+              onSubmit={handleSubmit}
+            >
+              <Form action="" className="signin-form">
+                <div className="signin-email">
+                  <Field
+                    type="email"
+                    name="email"
+                    placeholder="Email"
+                    autoComplete="username"
+                  />
+                  <ErrorMessage name="email" />
+                </div>
+                <div className="signin-email">
+                  <Field
+                    type="password"
+                    name="password"
+                    placeholder="Password"
+                    autoComplete="current-password"
+                  />
+                  <ErrorMessage name="password" />
+                </div>
+                <div className="signin-forget">
+                  <NavLink to="/forgotpass">Forgot Your Password?</NavLink>
+                </div>
+                <div className="signin-btn">
+                  <Button
+                    text="Sign In"
+                    type="submit"
+                    fontSize="1.6rem"
+                    width="100%"
+                  />
+                </div>
+              </Form>
+            </Formik>
+            <div className="signin_account">
+              <p>Don't have an account?</p>
+              <div className="signin_link">
+                <NavLink to="/signup">Sign Up</NavLink>
               </div>
-              <div className="signin-email">
-                <Field
-                  type="password"
-                  name="password"
-                  placeholder="Password"
-                  autoComplete="current-password"
-                />
-                <ErrorMessage name="password" />
-              </div>
-              <div className="signin-forget">
-                <NavLink to="/forgotpass">Forgot Your Password?</NavLink>
-              </div>
-              <div className="signin-btn">
-                <Button
-                  text="Sign In"
-                  type="submit"
-                  fontSize="1.6rem"
-                  width="100%"
-                />
-              </div>
-            </Form>
-          </Formik>
-          <div className="signin_account">
-            <p>Don't have an account?</p>
-            <div className="signin_link">
-              <NavLink to="/signup">Sign Up</NavLink>
             </div>
           </div>
         </div>

@@ -8,7 +8,7 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
-.signup .signup_box {
+.signup .signup_container .signup_box {
   max-width: 70rem;
   padding: 1.5rem 3.5rem 2rem 3.5rem;
   text-align: center;
@@ -16,39 +16,39 @@
   border-radius: 1rem;
   margin: 2rem;
 }
-.signup .signup_box .signup_logo a {
+.signup .signup_container .signup_box .signup_logo a {
   text-decoration: none;
 }
-.signup .signup_box .signup_logo a .signup_name {
+.signup .signup_container .signup_box .signup_logo a .signup_name {
   font-size: 2.5rem;
   margin-bottom: 2rem;
   text-decoration: none;
   color: #000000;
 }
-.signup .signup_para {
+.signup .signup_container .signup_para {
   font-weight: 400;
   font-size: 2rem;
   line-height: 2.2rem;
   margin-bottom: 3rem;
 }
-.signup .signup_parah2 {
+.signup .signup_container .signup_parah2 {
   font-weight: 400;
   font-size: 2.3rem;
   line-height: 2.2rem;
   margin-bottom: 2rem;
 }
-.signup .signup_form {
+.signup .signup_container .signup_form {
   margin-bottom: 5.7rem;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
-.signup .signup_form .signup_email {
+.signup .signup_container .signup_form .signup_email {
   font-size: 1.4rem;
   margin-bottom: 1rem;
   color: red;
 }
-.signup .signup_form .signup_email input {
+.signup .signup_container .signup_form .signup_email input {
   z-index: 5;
   width: 29.8rem;
   height: 4rem;
@@ -61,21 +61,21 @@
   margin-bottom: 1.8rem;
   display: block;
 }
-.signup .signup_form .signup_btn {
+.signup .signup_container .signup_form .signup_btn {
   width: 100%;
 }
-.signup .signup_account {
+.signup .signup_container .signup_account {
   width: 100%;
   display: flex;
   justify-content: space-between;
 }
-.signup .signup_account p {
+.signup .signup_container .signup_account p {
   font-weight: 400;
   font-size: 1.6rem;
   line-height: 2.17rem;
   color: #0a033c;
 }
-.signup .signup_account .signup_link a {
+.signup .signup_container .signup_account .signup_link a {
   font-size: 1.6rem;
   line-height: 2.17rem;
   font-weight: 400;

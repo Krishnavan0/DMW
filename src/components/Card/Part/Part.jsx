@@ -1,6 +1,6 @@
-import React from 'react'
+import React, {useState} from 'react';
 import './Part.css';
-
+import FilterSearch from '../../FilterSearch/FilterSearch';
 
 const part_data = [
   { id: 1, name: "Brake", img: "https://www.selectusedparts.com/assets/images/category-image/1652161342-Body-Parts-,-Exhaust,-Exterior-Fittings.png" },
@@ -11,6 +11,8 @@ const part_data = [
 ]
 
 const Part = () => {
+  const [modal, setModal] = useState(false);
+  const closeModal = () => setModal(false);
 
   return (
     <>
@@ -21,9 +23,7 @@ const Part = () => {
           {part_data.map((item) => {
             // console.log(item)
             return (
-              <div className="part_box" key={item.id} onClick={() => {
-                console.log('part', item.id)
-              }}>
+              <div className="part_box" key={item.id} onClick={() => {setModal(true) }}>
                 <img className="part_img" src={item.img} />
                 <div className="part_name">{item.name}</div>
               </div>
@@ -31,6 +31,7 @@ const Part = () => {
           })}
         </div>
       </div>
+      {modal && <FilterSearch closeModal={closeModal} />}
     </>
   )
 }

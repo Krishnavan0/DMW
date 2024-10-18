@@ -1,104 +1,111 @@
 .signin {
   height: 100vh;
   width: 100vw;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  // display: flex;
+  // align-items: center;
+  // justify-content: center;
   background-image: url("https://images.pexels.com/photos/190574/pexels-photo-190574.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
   background-repeat: no-repeat;
   background-size: cover;
 
-  .signin_box {
-    width: 36.2rem;
-    padding: 1.5rem 3.5rem 2rem 3.5rem;
-    text-align: center;
-    // border: 0.1rem solid #818181;
-    background: #ffffff;
-    border-radius: 1rem;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+  .signin_container {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 
-    .signin_name{
-      font-size: 4rem;
-      height: auto;
-      margin-bottom: 1rem;
-      a{
-        text-decoration: none;
-        color: #000;
-      }
-    }
+    .signin_box {
+      width: 36.2rem;
+      padding: 1.5rem 3.5rem 2rem 3.5rem;
+      text-align: center;
+      // border: 0.1rem solid #818181;
+      background: #ffffff;
+      border-radius: 1rem;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
 
-    .signin_para {
-      font-weight: 400;
-      font-size: 1.8rem;
-      line-height: 1.9rem;
-      margin-bottom: 3rem;
-    }
-
-    .signin_parah2 {
-      font-weight: 400;
-      font-size: 2rem;
-      line-height: 2.2rem;
-      margin-bottom: 2rem;
-    }
-
-    .signin-form {
-      margin-bottom: 2rem;
-
-      .signin-email {
-        font-size: 1.4rem;
+      .signin_name {
+        font-size: 4rem;
+        height: auto;
         margin-bottom: 1rem;
-        color: red;
-
-        input {
-          z-index: 5;
-          width: 29rem;
-          height: 4rem;
-          outline: none;
-          color: #0a033c;
-          padding: 0rem 1.8rem;
-          background: #ffffff;
-          border-radius: 0.5rem;
-          border: 1px solid #515151;
-          margin-bottom: 1.8rem;
-          display: block;
-        }
-      }
-
-      .signin-forget {
-        font-weight: 400;
-        font-size: 1.5rem;
-        line-height: 2rem;
-        
-        // color: #404dbf;
-        text-align: right;
-        margin-bottom: 1.4rem;
-
         a {
-          color: #404dbf;
           text-decoration: none;
+          color: #000;
         }
       }
-    }
 
-    .signin_account {
-      width: 100%;
-      display: flex;
-      justify-content: space-between;
-
-      p {
+      .signin_para {
         font-weight: 400;
-        font-size: 1.6rem;
-        line-height: 2.17rem;
-        color: #0a033c;
+        font-size: 1.8rem;
+        line-height: 1.9rem;
+        margin-bottom: 3rem;
       }
 
-      .signin_link a {
-        font-size: 1.6rem;
-        line-height: 2.17rem;
+      .signin_parah2 {
         font-weight: 400;
-        text-decoration: none;
-        color: #404dbf;
-        cursor: pointer;
+        font-size: 2rem;
+        line-height: 2.2rem;
+        margin-bottom: 2rem;
+      }
+
+      .signin-form {
+        margin-bottom: 2rem;
+
+        .signin-email {
+          font-size: 1.4rem;
+          margin-bottom: 1rem;
+          color: red;
+
+          input {
+            z-index: 5;
+            width: 29rem;
+            height: 4rem;
+            outline: none;
+            color: #0a033c;
+            padding: 0rem 1.8rem;
+            background: #ffffff;
+            border-radius: 0.5rem;
+            border: 1px solid #515151;
+            margin-bottom: 1.8rem;
+            display: block;
+          }
+        }
+
+        .signin-forget {
+          font-weight: 400;
+          font-size: 1.5rem;
+          line-height: 2rem;
+
+          // color: #404dbf;
+          text-align: right;
+          margin-bottom: 1.4rem;
+
+          a {
+            color: #404dbf;
+            text-decoration: none;
+          }
+        }
+      }
+
+      .signin_account {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+
+        p {
+          font-weight: 400;
+          font-size: 1.6rem;
+          line-height: 2.17rem;
+          color: #0a033c;
+        }
+
+        .signin_link a {
+          font-size: 1.6rem;
+          line-height: 2.17rem;
+          font-weight: 400;
+          text-decoration: none;
+          color: #404dbf;
+          cursor: pointer;
+        }
       }
     }
   }

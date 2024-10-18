@@ -59,106 +59,108 @@ const SignUp = () => {
   return (
     <>
       <div className="signup">
-        <div className="signup_box">
-          <div className="signup_logo">
-            <NavLink to="/">
-              <div className="signup_name">DMW</div>
-            </NavLink>
-          </div>
-          <div className="signup_parah2">Wants to Register as a Part Provider?</div>
-          <div className="signup_para">Create you account here</div>
-          <Formik
-            initialValues={defaultValue}
-            validationSchema={validationSchema}
-            onSubmit={submitForm}
-          >
-            <Form action="" className="signup_form">
-              <div className="signup_email">
-                <Field
-                  type="file"
-                  name="profile"
-                  placeholder="Profile Picture"
-                />
-                <ErrorMessage name="profile" />
+        <div className="signup_container">
+          <div className="signup_box">
+            <div className="signup_logo">
+              <NavLink to="/">
+                <div className="signup_name">DMW</div>
+              </NavLink>
+            </div>
+            <div className="signup_parah2">Wants to Register as a Part Provider?</div>
+            <div className="signup_para">Create you account here</div>
+            <Formik
+              initialValues={defaultValue}
+              validationSchema={validationSchema}
+              onSubmit={submitForm}
+            >
+              <Form action="" className="signup_form">
+                <div className="signup_email">
+                  <Field
+                    type="file"
+                    name="profile"
+                    placeholder="Profile Picture"
+                  />
+                  <ErrorMessage name="profile" />
+                </div>
+                <div className="signup_email">
+                  <Field
+                    type="text"
+                    name="name"
+                    placeholder="Name"
+                    autoComplete="username"
+                  />
+                  <ErrorMessage name="name" />
+                </div>
+                <div className="signup_email">
+                  <Field
+                    type="text"
+                    name="username"
+                    placeholder="Username"
+                    autoComplete="username"
+                  />
+                  <ErrorMessage name="username" />
+                </div>
+                <div className="signup_email">
+                  <Field
+                    type="email"
+                    name="email"
+                    placeholder="Email"
+                    autoComplete="username"
+                  />
+                  <ErrorMessage name="email" />
+                </div>
+                <div className="signup_email">
+                  <Field
+                    type="tel"
+                    name="phone"
+                    placeholder="Phone"
+                    autoComplete="tel"
+                  />
+                  <ErrorMessage name="phone" />
+                </div>
+                <div className="signup_email">
+                  <Field
+                    type="tel"
+                    name="alterphone"
+                    placeholder="Alternative Phone"
+                    autoComplete="tel"
+                  />
+                  <ErrorMessage name="alterphone" />
+                </div>
+                <div className="signup_email">
+                  <Field
+                    type="password"
+                    name="pass"
+                    placeholder="Password"
+                    autoComplete="current-password"
+                  />
+                  <ErrorMessage name="pass" />
+                </div>
+                <div className="signup_email">
+                  <Field
+                    type="password"
+                    name="passconf"
+                    placeholder="Confirm Password"
+                    autoComplete="current-password"
+                  />
+                  <ErrorMessage name="password" />
+                </div>
+                <div className="signup_btn">
+                  <Button
+                    text="Sign Up"
+                    type="submit"
+                    fontSize="1.6rem"
+                    width="29.8rem"
+                    borderRadius="1rem"
+                  />
+                </div>
+              </Form>
+            </Formik>
+            <div className="signup_account">
+              <p>Already have an account?</p>
+              <div className="signup_link">
+                <NavLink to="/signin">Sign In</NavLink>
               </div>
-              <div className="signup_email">
-                <Field
-                  type="text"
-                  name="name"
-                  placeholder="Name"
-                  autoComplete="username"
-                />
-                <ErrorMessage name="name" />
-              </div>
-              <div className="signup_email">
-                <Field
-                  type="text"
-                  name="username"
-                  placeholder="Username"
-                  autoComplete="username"
-                />
-                <ErrorMessage name="username" />
-              </div>
-              <div className="signup_email">
-                <Field
-                  type="email"
-                  name="email"
-                  placeholder="Email"
-                  autoComplete="username"
-                />
-                <ErrorMessage name="email" />
-              </div>
-              <div className="signup_email">
-                <Field
-                  type="tel"
-                  name="phone"
-                  placeholder="Phone"
-                  autoComplete="tel"
-                />
-                <ErrorMessage name="phone" />
-              </div>
-              <div className="signup_email">
-                <Field
-                  type="tel"
-                  name="alterphone"
-                  placeholder="Alternative Phone"
-                  autoComplete="tel"
-                />
-                <ErrorMessage name="alterphone" />
-              </div>
-              <div className="signup_email">
-                <Field
-                  type="password"
-                  name="pass"
-                  placeholder="Password"
-                  autoComplete="current-password"
-                />
-                <ErrorMessage name="pass" />
-              </div>
-              <div className="signup_email">
-                <Field
-                  type="password"
-                  name="passconf"
-                  placeholder="Confirm Password"
-                  autoComplete="current-password"
-                />
-                <ErrorMessage name="password" />
-              </div>
-              <div className="signup_btn">
-                <Button
-                  text="Sign Up"
-                  type="submit"
-                  fontSize="1.6rem"
-                  width="29.8rem"
-                  borderRadius="1rem"
-                />
-              </div>
-            </Form>
-          </Formik>
-          <div className="signup_account">
-            <p>Already have an account?</p>
-            <div className="signup_link">
-              <NavLink to="/signin">Sign In</NavLink>
             </div>
           </div>
         </div>

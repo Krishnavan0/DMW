@@ -1,6 +1,6 @@
 import React from 'react'
 import './Features.css';
-
+import { useNavigate } from 'react-router-dom';
 
 const features_data = [
   { id: 1, name: "Brake", img: "https://www.selectusedparts.com/assets/images/category-image/1652161342-Body-Parts-,-Exhaust,-Exterior-Fittings.png" },
@@ -12,6 +12,8 @@ const features_data = [
 ]
 
 const Features = () => {
+  const navigate = useNavigate();
+
   return (
     <div className='features'>
       <div className="features_heading">features categories</div>

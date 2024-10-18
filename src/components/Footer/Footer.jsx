@@ -1,8 +1,12 @@
-import React from 'react';
+import React, {useState} from 'react';
 import './footer.css'
 import { NavLink } from 'react-router-dom';
 
+import FilterSearch from '../FilterSearch/FilterSearch';
 const Footer = () => {
+  const [modal, setModal] = useState(false);
+  const closeModal = () => setModal(false);
+
   return (
     <>
       <div className="footer">
@@ -24,7 +28,7 @@ const Footer = () => {
                   <NavLink to='/'>Spare Parts</NavLink>
                 </li>
                 <li className="foot_item">
-                  <NavLink to='/'>Request a Part</NavLink>
+                  <div className='foot_item_text' onClick={() => { setModal(true) }}>Request a Part</div>
                 </li>
               </ul>
             </div>
@@ -33,10 +37,10 @@ const Footer = () => {
               <div className="foot_title">Important Link</div>
               <ul className='foot_items'>
                 <li className="foot_item">
-                  <NavLink to='/'>Search by make</NavLink>
+                  <div className='foot_item_text' onClick={() => { setModal(true) }}>Search by make</div>
                 </li>
                 <li className="foot_item">
-                  <NavLink to='/'>Search by parts</NavLink>
+                  <div className='foot_item_text' onClick={() => { setModal(true) }}>Search by parts</div>
                 </li>
                 <li className="foot_item">
                   <NavLink to='/policy'>Privacy Policy</NavLink>
@@ -64,6 +68,7 @@ const Footer = () => {
           <div className="copyright_head">Copyright © 2025;  Design By Mariposa Digital</div>
         </div>
       </div>
+      {modal && <FilterSearch closeModal={closeModal} />}
     </>
   )
 }
