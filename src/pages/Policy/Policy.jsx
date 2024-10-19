@@ -1,13 +1,11 @@
-import React from 'react'
-import Navbar from '../../components/Navbar/Navbar'
-import Footer from '../../components/Footer/Footer'
+import Base from "../../components/Base/Base";
 import './policy.css';
 
 const Policy = () => {
 
   return (
     <>
-      <Navbar />
+      <Base>
       <div className="policy">
         <div className="policy_title">Privacy Policy</div>
         <div className="policy_para">At DMW Durgapur Machine Works, we value your privacy and are committed to protecting your personal information. This Privacy Policy outlines how we collect, use, and safeguard the data you provide when using our website.</div>
@@ -20,7 +18,7 @@ const Policy = () => {
         <div className="policy_head">Changes to This Policy</div>
         <div className="policy_para">We may update this Privacy Policy from time to time. Any changes will be posted on this page, and we encourage you to review this policy periodically.</div>
       </div>
-      <Footer />
+      </Base>
     </>
   )
 }

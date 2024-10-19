@@ -1,1 +1,1 @@
-{"version":3,"sources":[],"names":[],"mappings":"","file":"SpareParts.css"}
+{"version":3,"sources":["SpareParts.scss","SpareParts.css"],"names":[],"mappings":"AAIA;EACE,UAAA;EACA,iBAAA;ACHF;ADKE;EACE,iBAAA;EACA,mBAAA;EACA,gBAAA;EACA,kBAAA;EACA,yBAAA;ACHJ;ADKE;EACE,iBAAA;EACA,qBAAA;ACHJ;ADKE;EACE,eAAA;EACA,qBAAA;EACA,gBAAA;ACHJ","file":"SpareParts.css"}

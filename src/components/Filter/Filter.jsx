@@ -3,8 +3,11 @@ import './filter.css';
 import { Formik, Form, Field } from "formik";
 import * as yup from "yup";
 import Button from "../../components/Button/Button";
+import Enquiry from '../../pages/Enquiry/Enquiry';
+import { useNavigate } from 'react-router-dom';
 
 const Filter = () => {
+  const navigate = useNavigate();
   const defaultValue = {
     company: "Select Car Company",
     model: "Select Car Model",
@@ -19,6 +22,8 @@ const Filter = () => {
 
   const submitForm = (values) => {
     console.log('values', values);
+    navigate('/enquiry');
+    console.log('navigate', navigate);
   };
 
   return (
@@ -34,9 +39,9 @@ const Filter = () => {
               {/* <Field type="text" name="company" placeholder="Select Car Company" /> */}
               <Field as="select" name="company">
                 <option disabled>Select Car Company</option>
-                <option value="maruti">Maruti</option>
-                <option value="hyundai">Hyundai</option>
-                <option value="mahindra">Mahindra</option>
+                <option value="audi">Audi</option>
+                <option value="mercedez">Mercedez</option>
+                <option value="rolls-royce">Rolls-Royce</option>
                 <option value="toyota">Toyota</option>
               </Field>
             </div>
@@ -44,8 +49,8 @@ const Filter = () => {
               {/* <Field type="text" name="model" placeholder="Select Car Model" /> */}
               <Field as="select" name="model">
                 <option disabled>Select Car Model</option>
-                <option value="beat">Beat</option>
-                <option value="sail">Sail</option>
+                <option value="aclass">A-Class</option>
+                <option value="bclass">B-Class</option>
               </Field>
             </div>
             <div className="filter_item">
@@ -60,7 +65,7 @@ const Filter = () => {
             </div>
             <div className="filter_btn">
               <Button
-                width='6.9rem'
+                width='100%'
                 height='4.6rem'
                 type="submit"
                 text="Search"

@@ -1,0 +1,25 @@
+// Media Queries
+
+//  Computers and Laptops
+
+.spare_parts {
+  width: 85%;
+  margin: 4rem auto;
+
+  .spare_parts_title {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    font-weight: 600;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  .spare_parts_para {
+    font-size: 1.6rem;
+    margin-bottom: 1.3rem;
+  }
+  .spare_parts_head {
+    font-size: 2rem;
+    margin-bottom: 1.3rem;
+    font-weight: 500;
+  }
+}

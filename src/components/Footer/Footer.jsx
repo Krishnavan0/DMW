@@ -25,7 +25,7 @@ const Footer = () => {
                   <NavLink to='/contact'>Contact</NavLink>
                 </li>
                 <li className="foot_item">
-                  <NavLink to='/'>Spare Parts</NavLink>
+                  <NavLink to='/spare'>Spare Parts</NavLink>
                 </li>
                 <li className="foot_item">
                   <div className='foot_item_text' onClick={() => { setModal(true) }}>Request a Part</div>

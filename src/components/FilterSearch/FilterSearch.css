@@ -5,6 +5,7 @@
   right: 0;
   bottom: 0;
   background: rgba(110, 110, 110, 0.4745098039);
+  cursor: pointer;
 }
 
 .search_container {
@@ -25,6 +26,7 @@
   text-align: end;
   text-align: right;
   justify-content: end;
+  cursor: pointer;
 }
 .search_container .search .search_back {
   width: 3.2rem;

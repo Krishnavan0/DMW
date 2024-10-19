@@ -3,8 +3,10 @@ import { Formik, Form, Field } from "formik";
 import * as yup from "yup";
 import Button from "../../components/Button/Button";
 import { RxCross1 } from "react-icons/rx";
+import { useNavigate } from 'react-router-dom';
 
 const searchSearch = ({ closeModal }) => {
+  const navigate = useNavigate();
 
   const defaultValue = {
     company: "Select Car Company",
@@ -20,6 +22,8 @@ const searchSearch = ({ closeModal }) => {
 
   const submitForm = (values) => {
     console.log('values', values);
+    console.log('navigate', navigate);
+
   };
 
   return (
@@ -52,8 +56,8 @@ const searchSearch = ({ closeModal }) => {
                   {/* <Field type="text" name="model" placeholder="Select Car Model" /> */}
                   <Field as="select" name="model">
                     <option disabled>Select Car Model</option>
-                    <option value="beat">Beat</option>
-                    <option value="sail">Sail</option>
+                    <option value="beat">A-Class</option>
+                    <option value="bclass">B-Class</option>
                   </Field>
                 </div>
                 <div className="search_item">

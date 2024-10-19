@@ -1,15 +1,14 @@
 import React from 'react'
-import Part from '../../components/Card/Part/Part'
-import Navbar from '../../components/Navbar/Navbar'
-import Footer from '../../components/Footer/Footer'
+import Part from '../../components/Card/Part/Part';
+import Base from "../../components/Base/Base";
 
 const Parts = () => {
   return (
     <>
       <div className="parts">
-        <Navbar/>
+      <Base>
         <Part />
-        <Footer/>
+        </Base>
       </div>
     </>
   )

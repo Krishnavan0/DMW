@@ -1,12 +1,19 @@
 import React from 'react'
 import Navbar from '../../components/Navbar/Navbar';
 import Footer from '../../components/Footer/Footer';
+import Base from "../../components/Base/Base";
 import './about.css';
 
 const About = () => {
+
+  window.scrollTo({
+    top: 0,
+    left: 0,
+    behavior: "smooth",
+  });
   return (
     <>
-    <Navbar/>
+    <Base>
       <div className="about">
         <div className="about_title">About</div>
         <div className="about_para">
@@ -22,7 +29,7 @@ const About = () => {
         Thank you for choosing DMW Durgapur Machine Works as your connection to quality spare parts. We look forward to working with you!
         </div>
       </div>
-      <Footer/>
+      </Base>
     </>
   )
 }

@@ -1,21 +1,20 @@
 import React from 'react'
-import Navbar from '../../components/Navbar/Navbar';
-import Footer from '../../components/Footer/Footer';
 import './SpareParts.css';
+import Base from "../../components/Base/Base";
 
 const SpareParts = () => {
   return (
     <>
-      <Navbar />
-      <div className="spare_parts">
-        <div className="spare_parts_title">Spare Parts</div>
-        <div className="spare_parts_para"></div>
-        <div className="spare_parts_head"></div>
-        <div className="spare_parts_para"></div>
-        <div className="spare_parts_head"></div>
-        <div className="spare_parts_para"></div>
-      </div>
-      <Footer />
+      <Base>
+        <div className="spare_parts">
+          <div className="spare_parts_title">Spare Parts</div>
+          <div className="spare_parts_para"></div>
+          <div className="spare_parts_head"></div>
+          <div className="spare_parts_para"></div>
+          <div className="spare_parts_head"></div>
+          <div className="spare_parts_para"></div>
+        </div>
+      </Base>
     </>
   );
 };

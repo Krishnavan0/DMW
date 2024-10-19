@@ -5,6 +5,7 @@
   right: 0;
   bottom: 0;
   background: #6e6e6e79;
+  cursor: pointer;
 }
 
 .search_container {
@@ -25,6 +26,7 @@
       text-align: end;
       text-align: right;
       justify-content: end;
+      cursor: pointer;
     }
     .search_back {
       width: 3.2rem;
