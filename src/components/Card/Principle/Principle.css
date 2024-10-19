@@ -1,47 +1,96 @@
-.principle {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  padding: 3.3rem 0rem;
-  flex-direction: column;
+@media (min-width: 711px) {
+  .principle {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 3.3rem 0rem;
+    flex-direction: column;
+  }
+  .principle .principle_heading {
+    font-size: 3.6rem;
+    font-weight: 500;
+    margin-bottom: 1.3rem;
+    text-transform: uppercase;
+  }
+  .principle .principle_parag {
+    font-size: 1.6rem;
+    margin-bottom: 3.7rem;
+    font-weight: 400;
+    text-align: center;
+  }
+  .principle .principle_items {
+    width: 85%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .principle .principle_items .principle_box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30.2rem;
+    padding: 2.3rem 2rem;
+  }
+  .principle .principle_items .principle_box .principle_img {
+    width: 7.4rem;
+    height: 7.4rem;
+    margin: 2rem;
+  }
+  .principle .principle_items .principle_box .principle_name {
+    font-size: 2rem;
+    margin-bottom: 1.7rem;
+    font-weight: 700;
+  }
+  .principle .principle_items .principle_box .principle_description {
+    font-size: 1.6rem;
+    text-align: center;
+  }
 }
-.principle .principle_heading {
-  font-size: 3.6rem;
-  font-weight: 500;
-  margin-bottom: 1.3rem;
-  text-transform: uppercase;
-}
-.principle .principle_parag {
-  font-size: 1.6rem;
-  margin-bottom: 3.7rem;
-  font-weight: 400;
-  text-align: center;
-}
-.principle .principle_items {
-  width: 85%;
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-}
-.principle .principle_items .principle_box {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 30.2rem;
-  padding: 2.3rem 2rem;
-}
-.principle .principle_items .principle_box .principle_img {
-  width: 7.4rem;
-  height: 7.4rem;
-  margin: 2rem;
-}
-.principle .principle_items .principle_box .principle_name {
-  font-size: 2rem;
-  margin-bottom: 1.7rem;
-  font-weight: 700;
-}
-.principle .principle_items .principle_box .principle_description {
-  font-size: 1.6rem;
-  text-align: center;
+@media (max-width: 710px) and (min-width: 360px) {
+  .principle {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 3.3rem 0rem;
+    flex-direction: column;
+  }
+  .principle .principle_heading {
+    font-size: 2.6rem;
+    font-weight: 500;
+    margin-bottom: 1.3rem;
+    text-transform: uppercase;
+  }
+  .principle .principle_parag {
+    font-size: 1.5rem;
+    margin-bottom: 3.7rem;
+    font-weight: 400;
+    text-align: center;
+  }
+  .principle .principle_items {
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .principle .principle_items .principle_box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30.2rem;
+    padding: 2.3rem 2rem;
+  }
+  .principle .principle_items .principle_box .principle_img {
+    width: 7.4rem;
+    height: 7.4rem;
+    margin: 2rem;
+  }
+  .principle .principle_items .principle_box .principle_name {
+    font-size: 2rem;
+    margin-bottom: 1.7rem;
+    font-weight: 700;
+  }
+  .principle .principle_items .principle_box .principle_description {
+    font-size: 1.6rem;
+    text-align: center;
+  }
 }/*# sourceMappingURL=Principle.css.map */

@@ -1,45 +1,93 @@
-.company {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  background-color: #D4F1F4;
-  padding: 3.3rem 6rem;
-  flex-direction: column;
+@media (min-width: 638px) {
+  .company {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background-color: #d4f1f4;
+    padding: 3.3rem 6rem;
+    flex-direction: column;
+  }
+  .company .company_heading {
+    font-size: 3.6rem;
+    font-weight: 500;
+    margin-bottom: 1.3rem;
+    text-transform: uppercase;
+  }
+  .company .company_parag {
+    font-size: 1.6rem;
+    margin-bottom: 3.7rem;
+    font-weight: 400;
+    text-align: center;
+  }
+  .company .company_items {
+    max-width: 90%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .company .company_items .company_box {
+    width: 22.4rem;
+    height: 23rem;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: #fff;
+    border-radius: 1.5rem;
+  }
+  .company .company_items .company_box .company_img {
+    height: 16rem;
+    width: auto;
+  }
+  .company .company_items .company_box .company_name {
+    font-size: 1.6rem;
+    font-weight: 500;
+  }
 }
-.company .company_heading {
-  font-size: 3.6rem;
-  font-weight: 500;
-  margin-bottom: 1.3rem;
-  text-transform: uppercase;
-}
-.company .company_parag {
-  font-size: 1.6rem;
-  margin-bottom: 3.7rem;
-  font-weight: 400;
-  text-align: center;
-}
-.company .company_items {
-  max-width: 90%;
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-}
-.company .company_items .company_box {
-  width: 22.4rem;
-  height: 23rem;
-  margin-bottom: 1rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  background: #FFF;
-  border-radius: 1.5rem;
-}
-.company .company_items .company_box .company_img {
-  height: 16rem;
-  width: auto;
-}
-.company .company_items .company_box .company_name {
-  font-size: 1.6rem;
-  font-weight: 500;
+@media (max-width: 637px) and (min-width: 360px) {
+  .company {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background-color: #d4f1f4;
+    padding: 3.3rem 3.5rem;
+    flex-direction: column;
+  }
+  .company .company_heading {
+    font-size: 2.6rem;
+    font-weight: 500;
+    margin-bottom: 1.3rem;
+    text-transform: uppercase;
+  }
+  .company .company_parag {
+    font-size: 1.5rem;
+    margin-bottom: 3.7rem;
+    font-weight: 400;
+    text-align: center;
+  }
+  .company .company_items {
+    max-width: 90%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .company .company_items .company_box {
+    width: 22.4rem;
+    height: 23rem;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: #fff;
+    border-radius: 1.5rem;
+  }
+  .company .company_items .company_box .company_img {
+    height: 16rem;
+    width: auto;
+  }
+  .company .company_items .company_box .company_name {
+    font-size: 1.6rem;
+    font-weight: 500;
+  }
 }/*# sourceMappingURL=Company.css.map */

@@ -1,20 +1,44 @@
-.terms {
-  width: 85%;
-  margin: 4rem auto 9rem auto;
+@media (min-width: 638px) {
+  .terms {
+    width: 85%;
+    margin: 4rem auto 9rem auto;
+  }
+  .terms .terms_title {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    font-weight: 600;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  .terms .terms_para {
+    font-size: 1.6rem;
+    margin-bottom: 1.3rem;
+  }
+  .terms .terms_head {
+    font-size: 2rem;
+    margin-bottom: 1.3rem;
+    font-weight: 500;
+  }
 }
-.terms .terms_title {
-  font-size: 2.5rem;
-  margin-bottom: 2rem;
-  font-weight: 600;
-  text-align: center;
-  text-transform: uppercase;
-}
-.terms .terms_para {
-  font-size: 1.6rem;
-  margin-bottom: 1.3rem;
-}
-.terms .terms_head {
-  font-size: 2rem;
-  margin-bottom: 1.3rem;
-  font-weight: 500;
+@media (max-width: 637px) and (min-width: 360px) {
+  .terms {
+    width: 85%;
+    margin: 4rem auto 9rem auto;
+  }
+  .terms .terms_title {
+    font-size: 2.1rem;
+    margin-bottom: 2rem;
+    font-weight: 600;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  .terms .terms_para {
+    font-size: 1.5rem;
+    margin-bottom: 1.3rem;
+  }
+  .terms .terms_head {
+    font-size: 1.8rem;
+    margin-bottom: 1.3rem;
+    font-weight: 500;
+  }
 }/*# sourceMappingURL=Terms.css.map */

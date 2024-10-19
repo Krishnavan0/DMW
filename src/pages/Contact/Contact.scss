@@ -2,10 +2,11 @@
 
 //  Computers and Laptops
 
-.contact {
+@media (min-width: 638px) {
+  .contact {
     width: 85%;
     margin: 4rem auto;
-  
+
     .contact_title {
       font-size: 2.5rem;
       margin-bottom: 2rem;
@@ -17,7 +18,34 @@
       font-size: 1.6rem;
       margin-bottom: 1.3rem;
     }
-//     .contact_head {
-//   }
+    .contact_head {
+      font-size: 2rem;
+      margin-bottom: 1.3rem;
+      font-weight: 500;
+    }
+  }
 }
-  
+
+@media (max-width: 637px) and (min-width: 360px) {
+  .contact {
+    width: 85%;
+    margin: 4rem auto;
+
+    .contact_title {
+      font-size: 2.1rem;
+      margin-bottom: 2rem;
+      font-weight: 500;
+      text-align: center;
+      text-transform: uppercase;
+    }
+    .contact_para {
+      font-size: 1.5rem;
+      margin-bottom: 1.3rem;
+    }
+    .contact_head {
+      font-size: 1.8rem;
+      margin-bottom: 1.3rem;
+      font-weight: 500;
+    }
+  }
+}

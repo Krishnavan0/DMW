@@ -16,7 +16,7 @@ const Part = () => {
 
   return (
     <>
-      <div className='part'>
+      <div className="part">
         <div className="part_heading">parts</div>
         <div className="part_parag">Find your spare here</div>
         <div className="part_items">

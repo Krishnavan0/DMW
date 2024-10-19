@@ -15,7 +15,7 @@ const Home = () => {
   return (
     <div className="home">
       <Base>
-        <Filter />
+        {/* <Filter /> */}
         <KeyBenefits />
         <Company />
         <Principle />

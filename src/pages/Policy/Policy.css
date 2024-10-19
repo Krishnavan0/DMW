@@ -1,20 +1,44 @@
-.policy {
-  width: 85%;
-  margin: 4rem auto;
+@media (min-width: 638px) {
+  .policy {
+    width: 85%;
+    margin: 4rem auto;
+  }
+  .policy .policy_title {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    font-weight: 600;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  .policy .policy_para {
+    font-size: 1.6rem;
+    margin-bottom: 1.3rem;
+  }
+  .policy .policy_head {
+    font-size: 2rem;
+    margin-bottom: 1.3rem;
+    font-weight: 500;
+  }
 }
-.policy .policy_title {
-  font-size: 2.5rem;
-  margin-bottom: 2rem;
-  font-weight: 600;
-  text-align: center;
-  text-transform: uppercase;
-}
-.policy .policy_para {
-  font-size: 1.6rem;
-  margin-bottom: 1.3rem;
-}
-.policy .policy_head {
-  font-size: 2rem;
-  margin-bottom: 1.3rem;
-  font-weight: 500;
+@media (max-width: 637px) and (min-width: 360px) {
+  .policy {
+    width: 85%;
+    margin: 4rem auto;
+  }
+  .policy .policy_title {
+    font-size: 2.1rem;
+    margin-bottom: 2rem;
+    font-weight: 600;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  .policy .policy_para {
+    font-size: 1.5rem;
+    margin-bottom: 1.3rem;
+  }
+  .policy .policy_head {
+    font-size: 1.8rem;
+    margin-bottom: 1.3rem;
+    font-weight: 500;
+  }
 }/*# sourceMappingURL=Policy.css.map */

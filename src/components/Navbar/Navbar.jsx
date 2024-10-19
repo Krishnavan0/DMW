@@ -1,10 +1,14 @@
-import React from 'react'
+import React, {useState} from 'react'
 import Button from '../Button/Button';
 import { useNavigate, NavLink } from 'react-router-dom';
 import './Navbar.css';
 
 const Navbar = () => {
   const navigate = useNavigate();
+  const [open, setOpen] = useState(false);
+  const handleOpen = () => {
+    setOpen(!open);
+  };
   
   return (
     <div className="navbar">
@@ -14,6 +18,11 @@ const Navbar = () => {
           <img src='/src/assets/images/dmw.png' alt="" />
           </NavLink>
         </div>
+        <div className="hamburger_menu">
+            <label htmlFor="toggle">&#9776;</label>
+            <input type="checkbox" id="toggle" onClick={handleOpen} />
+            {/* {open && <Menu hideMenu={hideMenu} />} */}
+          </div>
         <div className="nav_items">
           <ul className="nav_item_list">
             <li className="nav_item">

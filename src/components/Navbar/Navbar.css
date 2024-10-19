@@ -1,40 +1,75 @@
-.navbar {
-  height: 7rem;
-  width: 100%;
-  align-items: center;
-  justify-content: center;
-  display: flex;
-  background: aliceblue;
+@media (min-width: 768px) {
+  .navbar {
+    height: 7rem;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    background: aliceblue;
+  }
+  .navbar .nav {
+    display: flex;
+    width: 85%;
+    margin: auto;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .navbar .nav .nav_logo img {
+    font-size: 3rem;
+    width: 20rem;
+    height: 5.8rem;
+  }
+  .navbar .nav .hamburger_menu {
+    display: none;
+  }
+  .navbar .nav .nav_items {
+    display: flex;
+    justify-content: space-between;
+  }
+  .navbar .nav .nav_items .nav_item_list {
+    display: flex;
+    width: 27rem;
+    justify-content: space-between;
+    list-style: none;
+    align-items: center;
+    margin-right: 5rem;
+  }
+  .navbar .nav .nav_items .nav_item_list .nav_item {
+    font-size: 1.7rem;
+    font-weight: 400;
+  }
+  .navbar .nav .nav_items .nav_item_list .nav_item a {
+    text-decoration: none;
+    color: black;
+  }
 }
-.navbar .nav {
-  display: flex;
-  width: 85%;
-  margin: auto;
-  align-items: center;
-  justify-content: space-between;
-}
-.navbar .nav .nav_logo img {
-  font-size: 3rem;
-  width: 20rem;
-  height: 5.8rem;
-}
-.navbar .nav .nav_items {
-  display: flex;
-  justify-content: space-between;
-}
-.navbar .nav .nav_items .nav_item_list {
-  display: flex;
-  width: 27rem;
-  justify-content: space-between;
-  list-style: none;
-  align-items: center;
-  margin-right: 5rem;
-}
-.navbar .nav .nav_items .nav_item_list .nav_item {
-  font-size: 1.7rem;
-  font-weight: 400;
-}
-.navbar .nav .nav_items .nav_item_list .nav_item a {
-  text-decoration: none;
-  color: black;
+@media (max-width: 767px) and (min-width: 360px) {
+  .navbar {
+    height: 7rem;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    background: aliceblue;
+  }
+  .navbar .nav {
+    display: flex;
+    width: 85%;
+    margin: auto;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .navbar .nav .nav_logo img {
+    width: 14rem;
+    height: 4.2rem;
+  }
+  .navbar .nav .hamburger_menu label {
+    font-size: 3rem;
+  }
+  .navbar .nav .hamburger_menu input {
+    display: none;
+  }
+  .navbar .nav .nav_items {
+    display: none;
+  }
 }/*# sourceMappingURL=Navbar.css.map */

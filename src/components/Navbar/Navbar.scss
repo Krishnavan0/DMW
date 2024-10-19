@@ -1,45 +1,93 @@
-.navbar {
-  height: 7rem;
-  width: 100%;
-  align-items: center;
-  justify-content: center;
-  display: flex;
-  background: aliceblue;
+// Media Queries
 
-  .nav {
-    display: flex;
-    width: 85%;
-    margin: auto;
+//  Computers and Laptops
+
+@media (min-width: 768px) {
+  .navbar {
+    height: 7rem;
+    width: 100%;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
+    display: flex;
+    background: aliceblue;
 
-    .nav_logo img {
-      font-size: 3rem;
-      width: 20rem;
-      height: 5.8rem;
-    }
-
-    .nav_items {
+    .nav {
       display: flex;
+      width: 85%;
+      margin: auto;
+      align-items: center;
       justify-content: space-between;
-      // width: 34rem;
 
-      .nav_item_list {
+      .nav_logo img {
+        font-size: 3rem;
+        width: 20rem;
+        height: 5.8rem;
+      }
+
+      .hamburger_menu {
+        display: none;
+      }
+
+      .nav_items {
         display: flex;
-        width: 27rem;
         justify-content: space-between;
-        list-style: none;
-        align-items: center;
-        margin-right: 5rem;
+        // width: 34rem;
 
-        .nav_item{
-          font-size: 1.7rem;
-          font-weight: 400;
-        a {
-          text-decoration: none;
-          color: black;
+        .nav_item_list {
+          display: flex;
+          width: 27rem;
+          justify-content: space-between;
+          list-style: none;
+          align-items: center;
+          margin-right: 5rem;
+
+          .nav_item {
+            font-size: 1.7rem;
+            font-weight: 400;
+            a {
+              text-decoration: none;
+              color: black;
+            }
+          }
         }
       }
+    }
+  }
+}
+
+@media (max-width: 767px) and (min-width: 360px) {
+  .navbar {
+    height: 7rem;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    background: aliceblue;
+
+    .nav {
+      display: flex;
+      width: 85%;
+      margin: auto;
+      align-items: center;
+      justify-content: space-between;
+
+      .nav_logo img {
+        width: 14rem;
+        height: 4.2rem;
+      }
+
+      .hamburger_menu {
+        label {
+          font-size: 3rem;
+        }
+
+        input {
+          display: none;
+        }
+      }
+
+      .nav_items {
+        display: none;
       }
     }
   }

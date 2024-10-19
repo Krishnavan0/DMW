@@ -6,8 +6,8 @@ const Parts = () => {
   return (
     <>
       <div className="parts">
-      <Base>
-        <Part />
+        <Base>
+          <Part />
         </Base>
       </div>
     </>
