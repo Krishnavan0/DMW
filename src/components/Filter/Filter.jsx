@@ -28,6 +28,7 @@ const Filter = () => {
 
   return (
     <div className="filter">
+      <div className="filter_head">Search your Spare Parts</div>
       <Formik
         initialValues={defaultValue}
         validationSchema={validationSchema}

@@ -7,13 +7,14 @@
   background-image: url("https://images.pexels.com/photos/190574/pexels-photo-190574.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
   background-repeat: no-repeat;
   background-size: cover;
+
   .forgot_box {
     width: 36.2rem;
-    padding: 1.5rem 3.5rem 2rem 3.5rem;
     text-align: center;
-    background: #ffffff;
     border-radius: 1rem;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    background: #ffffff;
+    padding: 1.5rem 3.5rem 2rem 3.5rem;
+    box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.3);
     // border: 0.1rem solid #c4c4c4;
 
     .forgot_logo {
@@ -39,16 +40,18 @@
       color: red;
       input {
         z-index: 5;
-        width: 29.8rem;
         height: 4rem;
         outline: none;
+        display: block;
+        width: 29.8rem;
         color: #0a033c;
         padding: 0rem 1.8rem;
         background: #ffffff;
         border-radius: 0.5rem;
-        border: 1px solid #c4c4c4;
+        // border: 1px solid #c4c4c4;
         margin-bottom: 1.8rem;
-        display: block;
+        border: 0.2rem solid #e1ebee;
+        border-bottom: 0.2rem solid #a5a5a5;
       }
     }
     .forgot_btn {

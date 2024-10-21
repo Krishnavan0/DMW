@@ -6,6 +6,7 @@
     justify-content: center;
     display: flex;
     background: aliceblue;
+    box-shadow: 0px 4px 7px 0px rgba(0, 0, 0, 0.25);
   }
   .navbar .nav {
     display: flex;
@@ -51,6 +52,7 @@
     justify-content: center;
     display: flex;
     background: aliceblue;
+    box-shadow: 0px 4px 7px 0px rgba(0, 0, 0, 0.25);
   }
   .navbar .nav {
     display: flex;

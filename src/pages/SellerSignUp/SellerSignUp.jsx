@@ -150,7 +150,7 @@ const SignUp = () => {
                     text="Sign Up"
                     type="submit"
                     fontSize="1.6rem"
-                    width="29.8rem"
+                    width="100%"
                     borderRadius="1rem"
                   />
                 </div>

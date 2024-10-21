@@ -1,0 +1,25 @@
+.menu {
+  width: 100%;
+  height: auto;
+  text-align: center;
+  padding: 1rem 1rem;
+  background: aliceblue;
+  box-shadow: 0px 4px 7px 0px rgba(0, 0, 0, 0.25);
+
+  .menu_items {
+    padding: 1rem 1rem;
+    // border: 0.2rem solid rgb(133, 133, 133);
+    .menu_item_list {
+      list-style: none;
+      .menu_item {
+        font-size: 1.7rem;
+        font-weight: 400;
+        margin-bottom: 1rem;
+        a {
+          text-decoration: none;
+          color: black;
+        }
+      }
+    }
+  }
+}

@@ -16,7 +16,7 @@
 }
 .search_container .search {
   width: 36rem;
-  height: 45rem;
+  height: 100%;
   background: #f4f4f4;
   padding: 4.2rem;
 }

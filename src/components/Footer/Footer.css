@@ -129,6 +129,7 @@
   }
   .footer .foot {
     width: 90%;
+    text-align: center;
   }
   .footer .foot .foot_head {
     font-size: 3.6rem;
@@ -136,15 +137,8 @@
     margin-bottom: 1rem;
     color: #fff;
   }
-  .footer .foot .foot_sect {
-    display: flex;
-    flex-wrap: wrap;
-  }
-  .footer .foot .foot_sect .foot_col_1 {
-    width: 80%;
-  }
   .footer .foot .foot_sect .foot_col_1 .foot_title {
-    font-size: 2.3rem;
+    font-size: 1.9rem;
     font-weight: 600;
     margin-bottom: 1.2rem;
     color: #fff;
@@ -153,7 +147,7 @@
     list-style: none;
   }
   .footer .foot .foot_sect .foot_col_1 .foot_items .foot_item {
-    font-size: 1.9rem;
+    font-size: 1.5rem;
     text-decoration: none;
     margin-bottom: 0.7rem;
   }

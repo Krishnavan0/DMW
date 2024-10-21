@@ -156,6 +156,7 @@
 
     .foot {
       width: 90%;
+      text-align: center;
 
       .foot_head {
         font-size: 3.6rem;
@@ -165,13 +166,13 @@
       }
 
       .foot_sect {
-        display: flex;
-        flex-wrap: wrap;
+        // display: flex;
+        // flex-wrap: wrap;
 
         .foot_col_1 {
-          width: 80%;
+          // width: 80%;
           .foot_title {
-            font-size: 2.3rem;
+            font-size: 1.9rem;
             font-weight: 600;
             margin-bottom: 1.2rem;
             color: #fff;
@@ -179,7 +180,7 @@
           .foot_items {
             list-style: none;
             .foot_item {
-              font-size: 1.9rem;
+              font-size: 1.5rem;
               text-decoration: none;
               margin-bottom: 0.7rem;
               a {

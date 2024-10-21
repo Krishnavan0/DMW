@@ -1,4 +1,4 @@
-@media (min-width: 711px) {
+@media (min-width: 1001px) {
   .benefits {
     width: 100%;
     display: flex;
@@ -27,7 +27,7 @@
   .benefits .benefits_items .benefits_box {
     display: flex;
     width: 43.2rem;
-    height: 12rem;
+    max-height: 12rem;
     padding: 2.3rem 2rem;
     margin-bottom: 2rem;
     background: #FFF;
@@ -47,7 +47,7 @@
     font-size: 1.5rem;
   }
 }
-@media (max-width: 710px) and (min-width: 360px) {
+@media (max-width: 1000px) and (min-width: 360px) {
   .benefits {
     width: 100%;
     display: flex;

@@ -2,86 +2,93 @@
 
 //  Computers and Laptops
 
-// @media (min-width: 1309px) {
-    .filter {
-        width: 36rem;
-        height: 45rem;
-        background: #f4f4f4;
-        padding: 4.2rem;
-  
-      .filter_items {
-        width: 100%;
-        // display: flex;
-        justify-content: space-between;
-  
-        .filter_item {
-          input {
-            outline: none;
-            width: 100%;
-            height: 4.5rem;
-            background: #e1ebee;
-            padding: 0rem 3.2rem;
-            border-bottom: 0.2rem solid #a5a5a5;
-          }
-  
-          select{
-            outline: none;
-            width: 100%;
-            height: 4.6rem;
-            background: #e1ebee;
-            margin-bottom: 1rem;
-            padding: 0rem 1.2rem;
-            border: 0.2rem solid #e1ebee;
-            border-bottom: 0.2rem solid #a5a5a5;
-          }
-  
-          select[as="select"] {
-            font-size: 1rem;
-            color: red;
-          }
+@media (min-width: 1309px) {
+  .filter {
+    width: 36rem;
+    height: 100%;
+    background: #f4f4f4;
+    padding: 4.2rem;
+    margin: 2rem auto;
+
+    .filter_head {
+      color: #606060;
+      font-size: 2rem;
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+
+    .filter_items {
+      width: 100%;
+      justify-content: space-between;
+
+      .filter_item {
+
+        select {
+          outline: none;
+          width: 100%;
+          height: 4.5rem;
+          background: #e1ebee;
+          margin-bottom: 1rem;
+          padding: 0rem 1.2rem;
+          border: 0.2rem solid #e1ebee;
+          border-bottom: 0.2rem solid #a5a5a5;
         }
+
+        // select[as="select"] {
+        //   font-size: 12rem;
+        //   color: red;
+        // }
       }
     }
-//   }
-  
-  @media (max-width: 1309px) and (min-width: 360px) {
-    .filter {
+  }
+}
+
+@media (max-width: 1309px) and (min-width: 360px) {
+  .filter {
+    width: 36rem;
+    height: 100%;
+    background: #f4f4f4;
+    padding: 4.2rem;
+    margin: 2rem auto;
+
+    .filter_head {
+      color: #606060;
+      font-size: 2rem;
+      text-align: center;
+      margin: 2rem 0rem;
+    }
+
+    .filter_items {
       width: 100%;
-      height: 100%;
-      border-radius: 0.5rem;
-      background: #69D4F6;
-      padding: 1.2rem 2rem;
-  
-      .filter_items {
-        width: 100%;
-        // display: flex;
-        justify-content: space-between;
-  
-        .filter_item {
-          input {
-            outline: none;
-            width: 100%;
-            height: 4.6rem;
-            border-radius: 0.5rem;
-            background: #FFF;
-            padding: 0rem 1.2rem;
-            border: 0.1rem solid #fff;
-            margin-bottom: 1rem;
-          }
-  
-          select{
-            outline: none;
-            width: 100%;
-            height: 4.6rem;
-            border-radius: 0.5rem;
-            background: #FFF;
-            border: 0.1rem solid #fff;
-            padding: 0rem 1.2rem;
-            margin-bottom: 1rem;
-          }
-  
-          // input[type="text"] {}
+      // display: flex;
+      justify-content: space-between;
+
+      .filter_item {
+        input {
+          outline: none;
+          width: 100%;
+          height: 4.5rem;
+          background: #e1ebee;
+          padding: 0rem 3.2rem;
+          border-bottom: 0.2rem solid #a5a5a5;
+        }
+
+        select {
+          outline: none;
+          width: 100%;
+          height: 4.6rem;
+          background: #e1ebee;
+          margin-bottom: 1rem;
+          padding: 0rem 1.2rem;
+          border: 0.2rem solid #e1ebee;
+          border-bottom: 0.2rem solid #a5a5a5;
+        }
+
+        select[as="select"] {
+          font-size: 1rem;
+          color: red;
         }
       }
     }
   }
+}

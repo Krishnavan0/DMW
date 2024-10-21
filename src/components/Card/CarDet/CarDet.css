@@ -1,0 +1,42 @@
+.cardet {
+  width: 43.2rem;
+  height: 43.2rem;
+  box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.25);
+  margin: 2rem;
+  padding: 3rem;
+}
+.cardet .cardet_title {
+  font-size: 2.7rem;
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.cardet .cardet_details .cardet_head {
+  font-size: 2.2rem;
+  font-weight: 600;
+  color: #555;
+  margin-bottom: 1rem;
+}
+.cardet .cardet_details .cardet_item {
+  font-size: 1.7rem;
+  font-weight: 400;
+  color: #555;
+  margin-bottom: 1rem;
+}
+.cardet .cardet_part {
+  background: #e7f3fe;
+  padding: 15px;
+  border-left: 5px solid #2196F3;
+  margin-top: 15px;
+}
+.cardet .cardet_part .cardet_part_head {
+  font-size: 2.2rem;
+  font-weight: 600;
+  color: #363636;
+}
+.cardet .cardet_part .cardet_part_item {
+  font-size: 1.7rem;
+  font-weight: 400;
+  color: #555;
+  margin-bottom: 1rem;
+}/*# sourceMappingURL=CarDet.css.map */
