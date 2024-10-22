@@ -1,4 +1,15 @@
-.enquiry {
-  width: 85%;
-  margin: auto;
+@media (min-width: 880px) {
+  .enquiry {
+    width: 85%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+@media (min-width: 880px) and (min-width: 360px) {
+  .enquiry {
+    width: 85%;
+    margin: auto;
+    justify-content: space-between;
+  }
 }/*# sourceMappingURL=Enquiry.css.map */

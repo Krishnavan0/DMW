@@ -1,24 +1,47 @@
-import React from 'react'
-import './CarDet.css'
+import React, { useState } from 'react';
+import './CarDet.css';
+import '../PartEnquiry/PartEnquiry.css';
+import PartEnquiry from '../PartEnquiry/PartEnquiry';
+import BuyerSignUp from '../BuyerSignUp/BuyerSignUp';
 
 const CarDet = () => {
+  const [parts, setParts] = useState([]);
+  const [todos, setTodos] = useState([]);
+
+  const deletePart = (index) => {
+    const updatedParts = parts.filter((_, i) => i !== index);
+    const updatedTodos = todos.filter((_, i) => i !== index); // Delete corresponding todo
+    setParts(updatedParts);
+    setTodos(updatedTodos); // Update todos state
+  };
+
   return (
     <>
+      <PartEnquiry parts={parts} setParts={setParts} setTodos={setTodos} />
+      {/* <BuyerSignUp/> */}
       <div className="cardet">
-        <div className="cardet_title">Choosen Vehicle Details</div>
+        <div className="cardet_title">Chosen Vehicle Details</div>
         <div className="cardet_details">
           <div className="cardet_head">Vehicle Information</div>
           <div className="cardet_item"><strong>Company:</strong> Datsun</div>
           <div className="cardet_item"><strong>Model:</strong> GO</div>
           <div className="cardet_item"><strong>Year:</strong> 2018</div>
         </div>
-        <div class="cardet_part">
+        <div className="cardet_part">
           <div className="cardet_part_head">Selected Part</div>
-          <div className="cardet_part_item"><strong>Part Name:</strong> Brake Disc</div>
+          {parts.length > 0 ? (
+            <ul className="cardet_part_ul">
+              {parts.map((item, index) => (
+                <li className="cardet_part_item" key={index} onClick={() => deletePart(index)}>
+                  {item}
+                </li>
+              ))}
+            </ul>
+          ) : null}
         </div>
       </div>
     </>
-  )
+  );
 }
 
-export default CarDet
+export default CarDet;

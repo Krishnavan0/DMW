@@ -6,6 +6,7 @@ import Home from "../pages/Home/Home";
 import About from "../pages/About/About";
 import Parts from "../pages/Parts/Parts";
 import Terms from "../pages/Terms/Terms";
+import Order from "../pages/Order/Order";
 import Policy from "../pages/Policy/Policy";
 import BussDet from "../pages/BussDet/BussDet";
 import Contact from "../pages/Contact/Contact";
@@ -25,6 +26,7 @@ function Routings() {
       <Route path="/parts" element={<Parts />} />
       <Route path="/about" element={<About />} />
       <Route path="/terms" element={<Terms />} />
+      <Route path="/order" element={<Order />} />
       <Route path="/policy" element={<Policy />} />
       <Route path="/bussdet" element={<BussDet />} />
       <Route path="/contact" element={<Contact />} />

@@ -1,1 +1,80 @@
-/*# sourceMappingURL=PartEnquiry.css.map */
+@media (min-width: 880px) {
+  .partenq {
+    width: 48%;
+    height: 43.2rem;
+    box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.25);
+    margin: 2rem;
+    padding: 3rem;
+  }
+  .partenq .partenq_title {
+    font-size: 2.4rem;
+    font-weight: 500;
+    margin-bottom: 2rem;
+  }
+  .partenq .partenq_form {
+    display: flex;
+  }
+  .partenq .partenq_form select {
+    z-index: 5;
+    width: 28rem;
+    height: 4rem;
+    outline: none;
+    color: #0a033c;
+    padding: 1rem 1.8rem;
+    background: #ffffff;
+    border-radius: 0.5rem;
+    margin-bottom: 1.8rem;
+    display: block;
+    border: 0.2rem solid #e1ebee;
+    border-bottom: 0.2rem solid #a5a5a5;
+  }
+  .partenq .partenq_form .partenq_btn {
+    width: 8.1rem;
+    height: 4rem;
+    border: 0.2rem solid #161d6f;
+    margin-left: 2rem;
+    background: #161d6f;
+    color: #ffffff;
+    font-size: 1.6rem;
+  }
+}
+@media (max-width: 880px) and (min-width: 360px) {
+  .partenq {
+    width: 85%;
+    height: auto;
+    box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.25);
+    margin: 2rem;
+    padding: 3rem;
+  }
+  .partenq .partenq_title {
+    font-size: 2.4rem;
+    font-weight: 500;
+    margin-bottom: 2rem;
+  }
+  .partenq .partenq_form {
+    display: flex;
+  }
+  .partenq .partenq_form select {
+    z-index: 5;
+    width: 28rem;
+    height: 4rem;
+    outline: none;
+    color: #0a033c;
+    padding: 1rem 1.8rem;
+    background: #ffffff;
+    border-radius: 0.5rem;
+    margin-bottom: 1.8rem;
+    display: block;
+    border: 0.2rem solid #e1ebee;
+    border-bottom: 0.2rem solid #a5a5a5;
+  }
+  .partenq .partenq_form .partenq_btn {
+    width: 8.1rem;
+    height: 4rem;
+    border: 0.2rem solid #161d6f;
+    margin-left: 2rem;
+    background: #161d6f;
+    color: #ffffff;
+    font-size: 1.6rem;
+  }
+}/*# sourceMappingURL=PartEnquiry.css.map */
