@@ -3,9 +3,10 @@ import { Formik, Form, Field, ErrorMessage } from "formik";
 import * as yup from "yup";
 import './BuyerSignUp.css';
 import Button from '../../Button/Button';
+import { useNavigate } from "react-router-dom";
 
-const BuyerSignUp = () => {
-
+const BuyerSignUp = ({ setSelect }) => {
+  const navigate = useNavigate();
   const defaultValue = {
     name: "",
     email: "",
@@ -138,6 +139,14 @@ const BuyerSignUp = () => {
             </div>
           </Form>
         </Formik>
+        <div className="buyersignup_btns">
+        <button className="buyersignup_btn1" onClick={() => {
+          setSelect(false)
+        }}>Back</button>
+        <button className="buyersignup_btn1" onClick={() => {
+          navigate('/order')
+        }}>Save</button>
+        </div>
       </div>
     </>
   );

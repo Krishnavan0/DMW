@@ -7,6 +7,7 @@ import BuyerSignUp from '../BuyerSignUp/BuyerSignUp';
 const CarDet = () => {
   const [parts, setParts] = useState([]);
   const [todos, setTodos] = useState([]);
+  const [select, setSelect] = useState(false);
 
   const deletePart = (index) => {
     const updatedParts = parts.filter((_, i) => i !== index);
@@ -15,10 +16,14 @@ const CarDet = () => {
     setTodos(updatedTodos); // Update todos state
   };
 
+  // console.log('CarDetselect', select);
+  // console.log('CarDetsetSelect', setSelect);
+
   return (
     <>
-      <PartEnquiry parts={parts} setParts={setParts} setTodos={setTodos} />
-      {/* <BuyerSignUp/> */}
+      {select ? (<BuyerSignUp setSelect={setSelect}/>) :
+        (<PartEnquiry parts={parts} setParts={setParts} setTodos={setTodos} setSelect={setSelect} />)
+      }
       <div className="cardet">
         <div className="cardet_title">Chosen Vehicle Details</div>
         <div className="cardet_details">

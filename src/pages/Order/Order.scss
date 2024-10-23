@@ -1,12 +1,84 @@
-.order {
-  width: 85%;
-  margin: 4rem auto;
+// Media Queries
 
-  .order_title {
-    font-size: 2.5rem;
-    margin-bottom: 2rem;
-    font-weight: 500;
-    text-align: center;
-    text-transform: uppercase;
+//  Computers and Laptops
+
+@media (min-width: 838px) {
+  .order {
+    width: 85%;
+    margin: 4rem auto;
+
+    .order_title {
+      font-size: 2.5rem;
+      margin-bottom: 2rem;
+      font-weight: 500;
+      text-align: center;
+      text-transform: uppercase;
+    }
+    .order_items {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      .order_box {
+        width: 48%;
+        padding: 3rem;
+        background-color: aliceblue;
+        margin-bottom: 2.5rem;
+        box-shadow: 3px 3px 7px 0px rgba(0, 0, 0, 0.25);
+
+        .order_item {
+          display: flex;
+          margin-bottom: 1rem;
+          .order_name {
+            width: 16rem;
+            font-size: 1.5rem;
+          }
+          span {
+            font-size: 1.5rem;
+            display: block;
+          }
+          p {
+            font-size: 1.5rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 837px) and (min-width: 360px) {
+  .order {
+    width: 85%;
+    margin: 4rem auto;
+
+    .order_title {
+      font-size: 2.5rem;
+      margin-bottom: 2rem;
+      font-weight: 500;
+      text-align: center;
+      text-transform: uppercase;
+    }
+    .order_items {
+      // display: flex;
+      // flex-wrap: wrap;
+      // justify-content: space-between;
+      .order_box {
+        width: 100%;
+        padding: 3rem;
+        background-color: aliceblue;
+        margin-bottom: 2.5rem;
+
+        .order_item {
+          display: flex;
+          margin-bottom: 1rem;
+          .order_name {
+            width: 16rem;
+            font-size: 1.5rem;
+          }
+          span {
+            font-size: 1.5rem;
+          }
+        }
+      }
+    }
   }
 }

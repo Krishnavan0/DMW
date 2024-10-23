@@ -3,15 +3,14 @@ import './filter.css';
 import { Formik, Form, Field } from "formik";
 import * as yup from "yup";
 import Button from "../../components/Button/Button";
-import Enquiry from '../../pages/Enquiry/Enquiry';
 import { useNavigate } from 'react-router-dom';
 
 const Filter = () => {
   const navigate = useNavigate();
   const defaultValue = {
-    company: "Select Car Company",
-    model: "Select Car Model",
-    year: "Select Year",
+    company: "",
+    model: "",
+    year: "",
   };
 
   const validationSchema = yup.object().shape({
@@ -23,7 +22,6 @@ const Filter = () => {
   const submitForm = (values) => {
     console.log('values', values);
     navigate('/enquiry');
-    console.log('navigate', navigate);
   };
 
   return (
@@ -39,7 +37,7 @@ const Filter = () => {
             <div className="filter_item">
               {/* <Field type="text" name="company" placeholder="Select Car Company" /> */}
               <Field as="select" name="company">
-                <option disabled>Select Car Company</option>
+                <option value="" disabled>Select Car Company</option>
                 <option value="audi">Audi</option>
                 <option value="mercedez">Mercedez</option>
                 <option value="rolls-royce">Rolls-Royce</option>
@@ -49,7 +47,7 @@ const Filter = () => {
             <div className="filter_item">
               {/* <Field type="text" name="model" placeholder="Select Car Model" /> */}
               <Field as="select" name="model">
-                <option disabled>Select Car Model</option>
+                <option value="" disabled>Select Car Model</option>
                 <option value="aclass">A-Class</option>
                 <option value="bclass">B-Class</option>
               </Field>
@@ -57,7 +55,7 @@ const Filter = () => {
             <div className="filter_item">
               {/* <Field type="text" name="year" placeholder="Select Year" /> */}
               <Field as="select" name="year">
-                <option disabled>Select Year</option>
+                <option value="" disabled>Select Year</option>
                 <option value="2021">2021</option>
                 <option value="2022">2022</option>
                 <option value="2023">2023</option>
