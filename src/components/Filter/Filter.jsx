@@ -21,7 +21,8 @@ const Filter = () => {
 
   const submitForm = (values) => {
     console.log('values', values);
-    navigate('/enquiry');
+
+    navigate(`/enquiry/${values.company}/${values.model}/${values.year}`);
   };
 
   return (
@@ -48,8 +49,8 @@ const Filter = () => {
               {/* <Field type="text" name="model" placeholder="Select Car Model" /> */}
               <Field as="select" name="model">
                 <option value="" disabled>Select Car Model</option>
-                <option value="aclass">A-Class</option>
-                <option value="bclass">B-Class</option>
+                <option value="a-class">A-Class</option>
+                <option value="b-class">B-Class</option>
               </Field>
             </div>
             <div className="filter_item">

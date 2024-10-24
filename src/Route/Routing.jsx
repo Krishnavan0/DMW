@@ -30,10 +30,9 @@ function Routings() {
       <Route path="/policy" element={<Policy />} />
       <Route path="/bussdet" element={<BussDet />} />
       <Route path="/contact" element={<Contact />} />
-      <Route path="/enquiry" element={<Enquiry />} />
+      <Route path="/enquiry/:company/:model/:year" element={<Enquiry />} />
       <Route path="/spare" element={<SpareParts />} />
       <Route path="/signup" element={<SellerSignUp />} />
-      <Route path="/signin" element={<SellerSignIn />} />
       <Route path="/signin" element={<SellerSignIn />} />
       <Route path="/forgotpass" element={<ForgotPass />} />
       <Route path="/changepass/:emailID" element={<ChangePass />} />

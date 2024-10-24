@@ -13,18 +13,22 @@ const ChangePassword = () => {
 
   const defaultValue = {
     code: "",
-    pin: "",
+    pass: "",
   };
 
   const onlyNum = /^[0-9 ]*$/;
   const validationSchema = yup.object().shape({
-    pin: yup
+    pass: yup
       .string()
       .nullable()
       .trim()
+      .required("Password is required!")
       .min(8, "Password must be at least 8 characters")
       .max(20, "Password must be at most 20 characters")
-      .required("Password is required!"),
+      .matches(/[a-z]+/, "One lowercase character")
+      .matches(/[A-Z]+/, "One uppercase character")
+      .matches(/[@$!%*#?&]+/, "One special character")
+      .matches(/\d+/, "One number"),
     code: yup
       .string()
       .matches(onlyNum, "Code must be digit")
@@ -74,7 +78,7 @@ const ChangePassword = () => {
               <div className="change_email">
                 <Field
                   type="password"
-                  name="pin"
+                  name="pass"
                   placeholder="New Password"
                   autoComplete="username"
                 />

@@ -12,7 +12,7 @@ const SellerSignIn = () => {
 
   const defaultValue = {
     email: "",
-    password: "",
+    pass: "",
   };
 
   let onlyEmail = new RegExp("[a-z0-9]+@[a-z]+.com");
@@ -23,18 +23,22 @@ const SellerSignIn = () => {
       .email("Email is invalid")
       .matches(onlyEmail, "Your Email looks like johndoe@gmail.com")
       .required("Email is required!"),
-    password: yup
+      pass: yup
       .string()
       .nullable()
       .trim()
       .required("Password is required!")
       .min(8, "Password must be at least 8 characters")
-      .max(20, "Password must be at most 20 characters"),
+      .max(20, "Password must be at most 20 characters")
+      .matches(/[a-z]+/, "One lowercase character")
+      .matches(/[A-Z]+/, "One uppercase character")
+      .matches(/[@$!%*#?&]+/, "One special character")
+      .matches(/\d+/, "One number"),
   });
 
   const handleSubmit = (values, action) => {
     console.log('SignIn', values)
-    navigate('/')
+    navigate('/order')
   };
   return (
     <>
@@ -65,12 +69,12 @@ const SellerSignIn = () => {
                 </div>
                 <div className="signin-email">
                   <Field
-                    type="password"
-                    name="password"
+                    type="text"
+                    name="pass"
                     placeholder="Password"
                     autoComplete="current-password"
                   />
-                  <ErrorMessage name="password" />
+                  <ErrorMessage name="pass" />
                 </div>
                 <div className="signin-forget">
                   <NavLink to="/forgotpass">Forgot Your Password?</NavLink>

@@ -22,8 +22,7 @@ const searchSearch = ({ closeModal }) => {
 
   const submitForm = (values) => {
     console.log('values', values);
-    console.log('navigate', navigate);
-
+    navigate(`/enquiry/${values.company}/${values.model}/${values.year}`);
   };
 
   return (

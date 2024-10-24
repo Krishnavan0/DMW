@@ -1,0 +1,67 @@
+.buyerotp {
+  width: 48%;
+  min-height: 43.2rem;
+  box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.25);
+  margin: 2rem auto;
+  padding: 3rem;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+.buyerotp .buyerotp_box {
+  width: 36.2rem;
+  padding: 1.5rem 3.5rem 2rem 3.5rem;
+  text-align: center;
+  background: #ffffff;
+  border-radius: 1rem;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}
+.buyerotp .buyerotp_box .buyerotp_logo {
+  margin-bottom: 2rem;
+}
+.buyerotp .buyerotp_box .buyerotp_logo .buyerotp_name {
+  font-size: 3.2rem;
+}
+.buyerotp .buyerotp_box .buyerotp_para {
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 2.2rem;
+  margin-bottom: 3.3rem;
+}
+.buyerotp .buyerotp_box .buyerotp-email {
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+  color: red;
+}
+.buyerotp .buyerotp_box .buyerotp-email input {
+  z-index: 5;
+  width: 100%;
+  height: 4rem;
+  outline: none;
+  color: #0a033c;
+  padding: 0rem 1.8rem;
+  background: #ffffff;
+  border-radius: 0.5rem;
+  margin-bottom: 1.8rem;
+  display: block;
+  border: 0.2rem solid #e1ebee;
+  border-bottom: 0.2rem solid #a5a5a5;
+}
+.buyerotp .buyerotp_box .buyerotp-btn {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 3rem;
+}
+.buyerotp .buyerotp_box .buyerotp_resend .buyerotp_resend_click {
+  font-weight: 400;
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+  color: #0a033c;
+}
+.buyerotp .buyerotp_box .buyerotp_resend .buyerotp_clickResend {
+  font-weight: 500;
+  font-size: 1.2rem;
+  line-height: 1.4rem;
+  color: #404dbf;
+  cursor: pointer;
+}/*# sourceMappingURL=BuyerOtp.css.map */

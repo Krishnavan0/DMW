@@ -14,6 +14,7 @@ const SignUp = () => {
     username: "",
     email: "",
     phone: "",
+    type: "",
     alterphone: "",
     pass: "",
     passconf: ""
@@ -28,6 +29,12 @@ const SignUp = () => {
       .nullable()
       .required("Name is required!")
       .max(30),
+    // type: yup
+    //   .string()
+    //   .matches(onlyText, "type must be text")
+    //   .nullable()
+    //   .required("Type is required!")
+    //   .max(30),
     email: yup
       .string()
       .nullable()
@@ -40,9 +47,15 @@ const SignUp = () => {
       .trim()
       .required("Password is required!")
       .min(8, "Password must be at least 8 characters")
-      .max(20, "Password must be at most 20 characters"),
+      .max(20, "Password must be at most 20 characters")
+      .matches(/[a-z]+/, "One lowercase character")
+      .matches(/[A-Z]+/, "One uppercase character")
+      .matches(/[@$!%*#?&]+/, "One special character")
+      .matches(/\d+/, "One number"),
     passconf: yup
-      .string(),
+    .string().label('confirm password')
+    .required()
+    .oneOf([yup.ref('pass'), null], 'Passwords must match'),
     alterphone: yup
       .string(),
     phone: yup
@@ -82,12 +95,20 @@ const SignUp = () => {
                   />
                   <ErrorMessage name="profile" />
                 </div>
+                {/* <div className="signup_email">
+                  <Field Field as="select" name="type">
+                    <option value="" disabled>Select your type</option>
+                    <option value="Buyer">Buyer</option>
+                    <option value="Supplier">Supplier</option>
+                  </Field>
+                  <ErrorMessage name="type" />
+                </div> */}
                 <div className="signup_email">
                   <Field
                     type="text"
                     name="name"
                     placeholder="Name"
-                    autoComplete="username"
+                    autoComplete="name"
                   />
                   <ErrorMessage name="name" />
                 </div>
@@ -96,7 +117,7 @@ const SignUp = () => {
                     type="text"
                     name="username"
                     placeholder="Username"
-                    autoComplete="username"
+                    // autoComplete="username"
                   />
                   <ErrorMessage name="username" />
                 </div>
@@ -129,7 +150,7 @@ const SignUp = () => {
                 </div>
                 <div className="signup_email">
                   <Field
-                    type="password"
+                    type="text"
                     name="pass"
                     placeholder="Password"
                     autoComplete="current-password"
@@ -138,12 +159,12 @@ const SignUp = () => {
                 </div>
                 <div className="signup_email">
                   <Field
-                    type="password"
+                    type="text"
                     name="passconf"
                     placeholder="Confirm Password"
                     autoComplete="current-password"
                   />
-                  <ErrorMessage name="password" />
+                  <ErrorMessage name="passconf" />
                 </div>
                 <div className="signup_btn">
                   <Button

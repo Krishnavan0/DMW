@@ -5,7 +5,7 @@ import './BuyerSignUp.css';
 import Button from '../../Button/Button';
 import { useNavigate } from "react-router-dom";
 
-const BuyerSignUp = ({ setSelect }) => {
+const BuyerSignUp = ({ setSelect, setOtp }) => {
   const navigate = useNavigate();
   const defaultValue = {
     name: "",
@@ -47,7 +47,7 @@ const BuyerSignUp = ({ setSelect }) => {
 
   const submitForm = (values) => {
     console.log('Seller Registration', values)
-    navigate('/bussdet')
+    // navigate('/bussdet')
   };
 
 
@@ -66,7 +66,7 @@ const BuyerSignUp = ({ setSelect }) => {
                 type="text"
                 name="name"
                 placeholder="Name"
-                autoComplete="username"
+                autoComplete="name"
               />
               <ErrorMessage name="name" />
             </div>
@@ -144,7 +144,7 @@ const BuyerSignUp = ({ setSelect }) => {
           setSelect(false)
         }}>Back</button>
         <button className="buyersignup_btn1" onClick={() => {
-          navigate('/order')
+          setOtp(true)
         }}>Save</button>
         </div>
       </div>

@@ -48,7 +48,7 @@
     margin-bottom: 1rem;
     color: red;
   }
-  .signup .signup_container .signup_form .signup_email input {
+  .signup .signup_container .signup_form .signup_email input, .signup .signup_container .signup_form .signup_email select {
     z-index: 5;
     width: 29.8rem;
     height: 4rem;
@@ -133,7 +133,7 @@
     margin-bottom: 1rem;
     color: red;
   }
-  .signup .signup_container .signup_form .signup_email input {
+  .signup .signup_container .signup_form .signup_email input, .signup .signup_container .signup_form .signup_email select {
     z-index: 5;
     width: 100%;
     height: 4rem;
